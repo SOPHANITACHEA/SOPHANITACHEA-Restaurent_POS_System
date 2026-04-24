@@ -21,9 +21,9 @@ app.use(express.json());
 // =========================
 // MONGODB CONNECT
 // =========================
-mongoose.connect('mongodb://127.0.0.1:27017/web_pos_y2')
-.then(() => console.log("✅ MongoDB Connected"))
-.catch(err => console.log(err));
+// mongoose.connect('mongodb://127.0.0.1:27017/web_pos_y2')
+// .then(() => console.log("✅ MongoDB Connected"))
+// .catch(err => console.log(err));
 
 
 // =========================
