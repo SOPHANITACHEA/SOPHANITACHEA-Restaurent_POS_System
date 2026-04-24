@@ -1,0 +1,238 @@
+<!-- Main Container -->
+<div class="container-fluid py-4 mt-5" style="position:relative; z-index:1;">
+  <div class="row">
+
+    <!-- ================= LEFT CATEGORY SIDEBAR ================= -->
+    <div class="col-lg-2 position-relative">
+  
+      <!-- Toggle Button -->
+      <button class="btn btn-primary toggle-btn"
+        [ngClass]="{ 'btn-open': showSidebar, 'btn-close': !showSidebar }"
+        (click)="toggleSidebar()">
+        <ng-container *ngIf="!showSidebar; else closeIcon">
+          <i class="bi bi-list"></i>
+        </ng-container>
+        <ng-template #closeIcon>
+          <i class="bi bi-x-lg"></i>
+        </ng-template>
+      </button>
+
+
+
+
+      <!-- Sidebar Content (always in DOM!) -->
+      <div class="sidebar card shadow-sm p-3"
+     [class.sidebar-hidden]="!showSidebar">
+
+  <button class="btn w-100 mb-2"
+          [ngClass]="{'btn-primary': selectedCategory === 'drink', 'btn-outline-primary': selectedCategory !== 'drink'}"
+          (click)="selectCategory('drink')">
+    Drinks
+  </button>
+
+  <button class="btn w-100 mb-2"
+          [ngClass]="{'btn-warning': selectedCategory === 'dessert', 'btn-outline-warning': selectedCategory !== 'dessert'}"
+          (click)="selectCategory('dessert')">
+    Dessert
+  </button>
+
+  <button class="btn w-100"
+          [ngClass]="{'btn-success': selectedCategory === 'appetizer', 'btn-outline-success': selectedCategory !== 'appetizer'}"
+          (click)="selectCategory('appetizer')">
+    Appetizer
+  </button>
+
+</div>
+
+    </div>
+    
+
+
+    <!-- ================= PRODUCTS ================= -->
+    <div class="col-lg-7">
+      <div class="row g-4">
+
+        <div class="col-md-3" *ngFor="let drink of filteredDrinks">
+          <div
+            class="card h-100 shadow-sm"
+            style="cursor:pointer; position:relative; z-index:1;"
+            [ngStyle]="drink.bg ? {'background-color': drink.bg} : {}"
+            (click)="addToOrder(drink)"
+          >
+
+            <img [src]="drink.image"
+                 class="card-img-top"
+                 [alt]="drink.name">
+
+            <div class="card-body">
+              <h5 class="card-title text-secondary">{{ drink.name }}</h5>
+              <p class="card-text text-secondary">{{ drink.description }}</p>
+              <p class="fw-bold text-success">${{ drink.price }} / 1 pcs</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ================= SIDEBAR ================= -->
+    <div class="col-lg-3">
+      <div class="sidebar rounded shadow-sm p-3 bg-light">
+        <h5 class="text-center mb-3">Current Order</h5>
+
+        <!-- Order List -->
+        <ul class="list-group mb-3"
+            *ngIf="order.length > 0; else emptyOrder">
+
+          <li class="list-group-item d-flex justify-content-between align-items-center"
+              *ngFor="let item of order">
+
+            <div>
+              <strong>{{ item.name }}</strong><br>
+              <small>
+                {{ item.quantity }} cup{{ item.quantity > 1 ? 's' : '' }}
+                — ${{ (item.price * item.quantity).toFixed(2) }}
+              </small>
+            </div>
+
+            <!-- Quantity Controls -->
+            <div class="d-flex align-items-center">
+
+              <button
+                class="btn btn-sm btn-outline-success me-1"
+                (click)="increase(item); $event.stopPropagation()">
+                +
+              </button>
+
+              <span class="mx-1">{{ item.quantity }}</span>
+
+              <button
+                class="btn btn-sm btn-outline-danger ms-1"
+                (click)="decrease(item); $event.stopPropagation()">
+                −
+              </button>
+
+            </div>
+          </li>
+
+        </ul>
+
+        <ng-template #emptyOrder>
+          <p class="text-center text-muted">No items selected yet</p>
+        </ng-template>
+
+
+        <!-- Totals -->
+        <div *ngIf="order.length > 0">
+
+          <div class="mb-2">
+            <strong>Subtotal:</strong> ${{ subtotal.toFixed(2) }}<br>
+            <strong>Discount:</strong> -${{ discount.toFixed(2) }}<br>
+            <strong>Total:</strong>
+            <span class="text-success fw-bold">
+              ${{ total.toFixed(2) }}
+            </span>
+          </div>
+
+          <!-- Print Bill -->
+          <button class="btn btn-success w-100"
+                  (click)="openPaymentModal()">
+            Print Bill
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ================= PAYMENT MODAL ================= -->
+
+<div *ngIf="showPaymentModal"
+     class="modal fade show d-block"
+     style="background-color: rgba(0,0,0,0.5); z-index:1050;"
+     (click)="closePaymentModal()">
+
+  <div class="modal-dialog"
+       style="margin-top: 100px;"
+       (click)="$event.stopPropagation()">
+
+    <div class="modal-content shadow">
+
+      <!-- Header -->
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title">💳 Payment Method</h5>
+
+        <button class="btn-close btn-close-white"
+                (click)="closePaymentModal()">
+        </button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body text-center">
+
+        <h6>Subtotal: ${{ subtotal.toFixed(2) }}</h6>
+        <h6>Discount: -${{ discount.toFixed(2) }}</h6>
+
+        <h5 class="fw-bold text-success mb-3">
+          Total: ${{ total.toFixed(2) }}
+        </h5>
+
+        <p class="text-muted">
+          Scan QR or enter cash:
+        </p>
+
+        <img src="image/aba.jpg"
+             class="img-fluid mb-3"
+             style="width:280px; border:3px solid #ccc; border-radius:10px;">
+
+        <!-- Cash Input -->
+        <div class="mb-3">
+          <label class="form-label">Cash Given ($)</label>
+
+          <input
+            type="number"
+            class="form-control text-center"
+            [(ngModel)]="cashGiven"
+            [min]="total">
+        </div>
+
+        <!-- Change -->
+        <div *ngIf="cashGiven >= total">
+          <h6 class="text-primary">
+            Change: ${{ change.toFixed(2) }}
+          </h6>
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer">
+
+        <button class="btn btn-secondary"
+                (click)="closePaymentModal()">
+          Close
+        </button>
+      
+        <!-- ✅ NEW PRE ORDER BUTTON -->
+        <button class="btn btn-warning"
+                (click)="preOrder()">
+          Pre-Order
+        </button>
+      
+        <button class="btn btn-success"
+                [disabled]="cashGiven < total"
+                (click)="confirmPayment()">
+          Confirm Payment
+        </button>
+      
+      </div>      
+
+    </div>
+  </div>
+</div>

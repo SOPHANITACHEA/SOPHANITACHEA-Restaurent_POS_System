@@ -1,0 +1,16 @@
+<div class="background">
+    <img src="image/drink.jpg" alt="Drink" class="background-img" />
+    <div class="overlay-text">
+    </div>
+  
+    <div class="form-popup">
+      <h3>Login</h3>
+      <input type="text" [(ngModel)]="username" placeholder="Username" />
+      <input type="password" [(ngModel)]="password" placeholder="Password" />
+      <button (click)="login()">Login</button>
+  
+      <div class="message" *ngIf="message" [ngClass]="{ 'success': isSuccess, 'error': !isSuccess }">
+        {{ message }}
+      </div>
+    </div>
+  </div>

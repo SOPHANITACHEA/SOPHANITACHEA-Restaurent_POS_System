@@ -1,0 +1,75 @@
+/* ======================
+   Chart Cards
+====================== */
+
+.chart-card {
+    height: 240px;
+  }
+  
+  .chart-card canvas {
+    width: 100% !important;
+    height: 180px !important;
+  }
+  
+  
+  /* ======================
+     Summary Cards
+  ====================== */
+  
+  .summary-card {
+    border-radius: 12px;
+  }
+  
+  .summary-card h6 {
+    font-size: 14px;
+  }
+  
+  .summary-card h5 {
+    font-size: 15px;
+  }
+  
+  
+  /* ======================
+     Clickable Cards
+  ====================== */
+  
+  .clickable {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .clickable:hover {
+    transform: scale(1.04);
+  }
+  
+  
+  /* ======================
+     Chart Popup Modal
+  ====================== */
+  
+  .chart-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(6px);
+    z-index: 9999;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chart-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  }
+  
+  .chart-modal canvas {
+    width: 100% !important;
+    height: 420px !important;
+  }
+  

@@ -1,0 +1,190 @@
+<button class="btn btn-success mb-3" (click)="exportSummaryPdf()">
+  Export Report PDF
+</button>
+
+<div class="container py-4 mt-5">
+
+  <h2 class="fw-bold mb-4">Sales Report Dashboard</h2>
+
+  <!-- =======================
+       TOP STATS
+  ======================= -->
+  <div class="row g-3">
+
+    <div class="col-md-3">
+      <div class="card shadow-sm bg-success text-white p-3">
+        <h6>Total Sales</h6>
+        <h4>${{ totalSales | number:'1.2-2' }}</h4>
+        <small>Today: ${{ todaySales | number:'1.2-2' }}</small>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card shadow-sm p-3">
+        <h6>Total Orders</h6>
+        <h4>{{ totalOrders }}</h4>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card shadow-sm border-success p-3">
+        <h6>Completed</h6>
+        <h4 class="text-success">{{ completedOrders }}</h4>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card shadow-sm border-danger p-3">
+        <h6>Cancelled</h6>
+        <h4 class="text-danger">{{ cancelledOrders }}</h4>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- =======================
+       DATE FILTER
+  ======================= -->
+  <div class="card shadow-sm p-3 mt-4">
+    <div class="row g-2 align-items-end">
+
+      <div class="col-md-3">
+        <label>From</label>
+        <input type="date" class="form-control" [(ngModel)]="fromDate">
+      </div>
+
+      <div class="col-md-3">
+        <label>To</label>
+        <input type="date" class="form-control" [(ngModel)]="toDate">
+      </div>
+
+      <div class="col-md-6 d-flex gap-2">
+        <button class="btn btn-primary" (click)="applySummaryFilter()">
+          Apply
+        </button>
+
+        <button class="btn btn-outline-secondary" (click)="resetSummaryFilter()">
+          Reset
+        </button>
+
+        <button class="btn btn-success ms-auto" (click)="exportExcel()">
+          Export Excel
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =======================
+       CHART GRID
+  ======================= -->
+  <div class="row g-3 mt-3">
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card shadow-sm p-2 chart-card clickable" (click)="openChart('sales')">
+        <h6>Daily Sales</h6>
+        <canvas id="salesCanvas"></canvas>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card shadow-sm p-2 chart-card clickable" (click)="openChart('status')">
+        <h6>Order Status</h6>
+        <canvas id="statusCanvas"></canvas>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card shadow-sm p-2 chart-card clickable" (click)="openChart('monthly')">
+        <h6>Monthly Revenue</h6>
+        <canvas id="monthlyCanvas"></canvas>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card shadow-sm p-2 chart-card clickable" (click)="openChart('profit')">
+        <h6>Profit</h6>
+        <canvas id="profitCanvas"></canvas>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- =======================
+       TOP ITEMS
+  ======================= -->
+  <div class="card shadow-sm p-3 mt-4">
+    <h6>Top Selling Items</h6>
+
+    <table class="table table-sm mb-0">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let t of topItems">
+          <td>{{ t.name }}</td>
+          <td>{{ t.qty }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- =======================
+       PEAK + COST + PROFIT
+  ======================= -->
+  <div class="row g-3 mt-3">
+
+    <div class="col-md-4">
+      <div class="card shadow-sm p-3">
+        <h6>Peak Hour</h6>
+        <h4>{{ peakHour }}</h4>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm p-3">
+        <h6>Total Cost</h6>
+        <h4>${{ totalCost | number:'1.2-2' }}</h4>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm p-3">
+        <h6>Total Profit</h6>
+        <h4 class="text-success">
+          ${{ totalProfit | number:'1.2-2' }}
+        </h4>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- =======================
+       PROFIT MARGIN
+  ======================= -->
+  <div class="card shadow-sm p-3 mt-3">
+    <h6>Profit Margin</h6>
+    <h3>{{ profitMargin | number:'1.0-1' }}%</h3>
+  </div>
+
+</div>
+
+<!-- =======================
+     POPUP CHART MODAL
+======================= -->
+<div *ngIf="popupChart" class="chart-overlay" (click)="closePopup()">
+  <div class="chart-modal" (click)="$event.stopPropagation()">
+
+    <div class="d-flex justify-content-between mb-2">
+      <h5>Chart Detail</h5>
+      <button class="btn btn-sm btn-danger" (click)="closePopup()">Close</button>
+    </div>
+
+    <canvas id="popupCanvas"></canvas>
+
+  </div>
+</div>

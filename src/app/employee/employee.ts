@@ -1,0 +1,162 @@
+import { Component } from '@angular/core';
+import * as bootstrap from 'bootstrap';
+import { CommonModule } from '@angular/common'; // ✅ add this
+
+@Component({
+  selector: 'app-employee',
+  standalone: true,
+  imports: [CommonModule], 
+  templateUrl: './employee.html',
+  styleUrls: ['./employee.css'],
+})
+export class Employee {
+  employees = [
+    {
+      id: 'vey',
+      name: 'Phorn Veychhen',
+      position: 'Project Manager',
+      department: 'Product Design',
+      hired: '17/11/25',
+      email: 'phornveychhen@gmail.com',
+      phone: '(885) 123-456-789',
+      img: 'image/vey.jpg',
+      online: true,
+      age: 29,
+      education: 'MBA in Project Management – NUM (2021)',
+      experience: 'Project Manager at SabaiTech (2022–Present)',
+      hobbies: 'Reading, traveling, leadership training',
+    },
+    {
+      id: 'nita',
+      name: 'Chea Sophanita',
+      position: 'UI/UX Designer',
+      department: 'Product Design',
+      hired: '17/11/25',
+      email: 'cheasophanita@gmail.com',
+      phone: '(885) 321-456-999',
+      img: 'image/nita.jpg',
+      online: false,
+      age: 24,
+      education: 'BSc in Management Information Systems – SETEC',
+      experience: 'UI/UX Intern at Creative Lab (2023–2024)',
+      hobbies: 'Sketching, reading design blogs, music',
+    },
+    {
+      id: 'mony',
+      name: 'Bin Mony',
+      position: 'Frontend Developer',
+      department: 'Web Development',
+      hired: '17/11/25',
+      email: 'binmony123@gmail.com',
+      phone: '(885) 555-222-111',
+      img: 'image/mony.jpg',
+      online: true,
+      age: 22,
+      education: 'BSc in Computer Science – RUPP',
+      experience: 'Frontend Developer at CodeLab (2024–Present)',
+      hobbies: 'Coding, gaming, tech videos',
+    },
+    // {
+    //   id: 'dara',
+    //   name: 'Chan Dara',
+    //   position: 'Backend Developer',
+    //   department: 'Web Development',
+    //   hired: '01/02/24',
+    //   email: 'chandara@gmail.com',
+    //   phone: '(885) 112-233-445',
+    //   img: 'img/dara.jpg',
+    //   online: true,
+    //   age: 26,
+    //   education: 'BSc in Computer Science – RUPP (2020)',
+    //   experience: 'Backend Developer at SabaiTech (2021–2024)',
+    //   hobbies: 'Coding, football, reading tech blogs',
+    // },
+    // {
+    //   id: 'lina',
+    //   name: 'Ly Lina',
+    //   position: 'HR Specialist',
+    //   department: 'Human Resources',
+    //   hired: '10/03/23',
+    //   email: 'lylina@gmail.com',
+    //   phone: '(885) 998-123-000',
+    //   img: 'img/lina.jpg',
+    //   online: false,
+    //   age: 28,
+    //   education: 'BA in Human Resources – NUM (2019)',
+    //   experience: 'HR at BrightFuture Co. (2020–2024)',
+    //   hobbies: 'Reading, yoga, mentoring',
+    // },
+    // {
+    //   id: 'vannak',
+    //   name: 'Neang Vannak',
+    //   position: 'Data Analyst',
+    //   department: 'Data Science',
+    //   hired: '02/06/24',
+    //   email: 'neangvannak@gmail.com',
+    //   phone: '(885) 111-555-333',
+    //   img: 'img/vannak.jpg',
+    //   online: true,
+    //   age: 27,
+    //   education: 'BSc in Data Science – ITC (2021)',
+    //   experience: 'Data Analyst at DataPlus (2022–Present)',
+    //   hobbies: 'Data visualization, cycling',
+    // },
+    // {
+    //   id: 'sopheak',
+    //   name: 'Chhim Sopheak',
+    //   position: 'Marketing Manager',
+    //   department: 'Marketing',
+    //   hired: '12/04/23',
+    //   email: 'sophmarketing@gmail.com',
+    //   phone: '(885) 900-876-345',
+    //   img: 'img/sopheak.jpg',
+    //   online: true,
+    //   age: 30,
+    //   education: 'MBA in Marketing – NUM (2020)',
+    //   experience: 'Marketing at SmartTech (2020–2024)',
+    //   hobbies: 'Photography, branding, traveling',
+    // },
+    // {
+    //   id: 'kunthea',
+    //   name: 'Keo Kunthea',
+    //   position: 'Graphic Designer',
+    //   department: 'Creative Design',
+    //   hired: '07/07/24',
+    //   email: 'keokunthea@gmail.com',
+    //   phone: '(885) 909-111-789',
+    //   img: 'image/kunthea.jpg',
+    //   online: false,
+    //   age: 25,
+    //   education: 'BA in Design – Phnom Penh Design School (2021)',
+    //   experience: 'Designer at ArtHub (2022–2024)',
+    //   hobbies: 'Drawing, photography, fashion',
+    // },
+    // {
+    //   id: 'rith',
+    //   name: 'Rithy Meas',
+    //   position: 'Finance Officer',
+    //   department: 'Finance',
+    //   hired: '18/08/23',
+    //   email: 'rithyfinance@gmail.com',
+    //   phone: '(885) 800-333-555',
+    //   img: 'img/rith.jpg',
+    //   online: true,
+    //   age: 32,
+    //   education: 'BBA in Finance – NUM (2018)',
+    //   experience: 'Finance Officer at BankPro (2019–2024)',
+    //   hobbies: 'Investing, reading business books',
+    // },
+  ];
+
+  selectedEmployee: any = null;
+  private modalInstance: any;
+
+  openModal(emp: any) {
+    this.selectedEmployee = emp;
+    const modalElement = document.getElementById('employeeModal');
+    if (modalElement) {
+      this.modalInstance = new bootstrap.Modal(modalElement);
+      this.modalInstance.show();
+    }
+  }
+}

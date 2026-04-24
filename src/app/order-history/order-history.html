@@ -1,0 +1,190 @@
+<div class="container py-4 mt-5">
+
+  <!-- ================= HEADER ================= -->
+  <h2 class="mb-4 fw-bold">Order History</h2>
+
+  <!-- ================= TABS + SORT ================= -->
+  <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="activeTab==='all'" (click)="setTab('all')">All Orders</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="activeTab==='preorder'" (click)="setTab('preorder')">Pre-Order</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="activeTab==='completed'" (click)="setTab('completed')">Completed</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="activeTab==='cancelled'" (click)="setTab('cancelled')">Cancelled</a>
+      </li>
+    </ul>
+
+    <!-- Sort -->
+    <select class="form-select w-auto" (change)="applySort($event)">
+      <option value="">Sort</option>
+      <option value="priceHigh">Highest Price</option>
+      <option value="priceLow">Lowest Price</option>
+      <option value="dateNew">Newest</option>
+      <option value="dateOld">Oldest</option>
+    </select>
+
+  </div>
+
+  <!-- ================= DATE FILTER + SUMMARY ================= -->
+  <div class="card p-3 mb-4 shadow-sm">
+    <div class="d-flex flex-wrap gap-3 align-items-end">
+
+      <!-- From Date -->
+      <div>
+        <label class="form-label">From</label>
+        <input type="datetime-local" class="form-control" [(ngModel)]="fromDate">
+      </div>
+
+      <!-- To Date -->
+      <div>
+        <label class="form-label">To</label>
+        <input type="datetime-local" class="form-control" [(ngModel)]="toDate">
+      </div>
+
+      <!-- Buttons -->
+      <div class="d-flex gap-2">
+        <button class="btn btn-primary" (click)="applyDateFilter()">Apply</button>
+        <button class="btn btn-outline-secondary" (click)="resetFilter()">Reset</button>
+      </div>
+
+      <!-- Revenue Summary -->
+      <div class="ms-auto fw-bold text-success fs-5">
+        Total Revenue: ${{ filteredTotal | number:'1.2-2' }}
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= ORDERS LIST ================= -->
+  <div *ngFor="let o of filteredOrders" class="card shadow-sm mb-4">
+
+    <!-- Order Header -->
+    <div class="card-body border-bottom d-flex justify-content-between align-items-center">
+      <div>
+        <h6 class="mb-1">Order: {{ o.orderId }}</h6>
+        <small class="text-muted">Order Payment: {{ o.createdAt | date:'medium' }}</small>
+      </div>
+
+      <div class="d-flex gap-2">
+        <button class="btn btn-outline-secondary btn-sm" (click)="showInvoice(o)">Show Invoice</button>
+        <button class="btn btn-outline-success btn-sm" *ngIf="o.status === 'PreOrder'" (click)="openConfirmPayment(o)">Confirm Payment</button>
+        <button class="btn btn-outline-warning btn-sm" *ngIf="o.status !== 'Cancelled'" (click)="cancelOrder(o)">Cancel</button>
+        <button class="btn btn-outline-danger btn-sm" (click)="deleteOrder(o)">🗑 Delete</button>
+      </div>
+    </div>
+
+    <!-- Order Items -->
+    <div class="card-body">
+      <div *ngFor="let item of o.items">
+        <div class="row align-items-center">
+          <!-- Image -->
+          <div class="col-md-2">
+            <img [src]="item.image || 'image/placeholder.jpg'" class="img-fluid rounded" style="max-height:120px; object-fit:cover;">
+          </div>
+
+          <!-- Name + Quantity -->
+          <div class="col-md-4">
+            <h5 class="mb-1">{{ item.name }}</h5>
+            <div class="text-muted small">Qty: {{ item.quantity }}</div>
+          </div>
+
+          <!-- Status -->
+          <div class="col-md-3">
+            <div class="text-muted small">Status</div>
+            <span class="fw-semibold"
+              [ngClass]="{
+                'text-warning': o.status==='PreOrder',
+                'text-success': o.status==='Completed',
+                'text-danger': o.status==='Cancelled'
+              }">
+              {{ o.status || 'Completed' }}
+            </span>
+          </div>
+
+          <!-- Price -->
+          <div class="col-md-3 text-end">
+            <div class="fw-bold">${{ (item.price * item.quantity).toFixed(2) }}</div>
+          </div>
+        </div>
+
+        <hr *ngIf="item !== o.items[o.items.length-1]">
+      </div>
+    </div>
+
+    <!-- Order Footer -->
+    <div class="card-footer d-flex justify-content-between">
+      <span class="fw-semibold"
+            [ngClass]="{
+              'text-warning': o.status==='PreOrder',
+              'text-success': o.status==='Completed',
+              'text-danger': o.status==='Cancelled'
+            }">
+        {{ o.status }}
+      </span>
+      <span class="fw-bold">Total Price: ${{ o.total.toFixed(2) }}</span>
+    </div>
+
+  </div>
+
+  <!-- ================= CONFIRM PAYMENT MODAL ================= -->
+  <div *ngIf="showPayModal"
+       class="modal fade show d-block"
+       style="background-color: rgba(0,0,0,0.5); z-index:1050;"
+       (click.self)="closePayModal()">
+
+    <div class="modal-dialog" style="margin-top: 100px;" (click)="$event.stopPropagation()">
+      <div class="modal-content shadow">
+
+        <!-- Modal Header -->
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">Confirm Payment</h5>
+          <button class="btn-close btn-close-white" (click)="closePayModal()"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body text-center">
+          <h5>Total: ${{ (payOrder?.total ?? 0).toFixed(2) }}</h5>
+          <p class="text-muted">Scan or enter cash</p>
+          <img src="image/aba.jpg" class="img-fluid mb-3" style="width:260px; border-radius:10px;">
+
+          <!-- Cash Input -->
+          <input type="number"
+       class="form-control text-center"
+       [ngModel]="payCash"
+       (ngModelChange)="payCash = +$event"
+       placeholder="Cash Given"
+       min="{{payOrder?.total}}"
+       step="0.01">
+
+
+
+          <!-- Change Display -->
+          <div *ngIf="payCash >= (payOrder?.total || 0)" class="mt-2 text-primary">
+            Change: ${{ (payCash - (payOrder?.total || 0)).toFixed(2) }}
+          </div>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+          <button type="button"
+        class="btn btn-success"
+        (click)="confirmPreOrderPayment()"
+        [disabled]="payCash < (payOrder?.total || 0)">
+            Confirm
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>

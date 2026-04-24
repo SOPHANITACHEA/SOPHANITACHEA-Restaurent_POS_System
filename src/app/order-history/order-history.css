@@ -1,0 +1,12 @@
+.card {
+    border-radius: 12px;
+  }
+  
+  .nav-tabs .nav-link.active {
+    font-weight: 600;
+  }
+  
+  img {
+    object-fit: cover;
+  }
+  

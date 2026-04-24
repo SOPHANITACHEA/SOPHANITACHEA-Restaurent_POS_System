@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #ffffff;
+  padding-top: 70px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+.sidebar {
+  position: sticky;
+  top: 80px;
+  height: calc(100vh - 80px);
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-left: 2px solid #dee2e6;
+  overflow-y: auto;
+}
+
+.card {
+  border: none;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.modal {
+  pointer-events: none;
+}
+
+.modal-dialog,
+.modal-content {
+  pointer-events: auto;
+}

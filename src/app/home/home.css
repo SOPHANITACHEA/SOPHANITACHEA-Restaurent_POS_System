@@ -1,0 +1,39 @@
+/* Base toggle button */
+.toggle-btn {
+    position: fixed;
+    top: 80px;
+    z-index: 3000;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease; /* smooth movement */
+  }
+  
+  /* When sidebar CLOSED → far left */
+  .btn-close {
+    left: 10px;
+  }
+  
+  /* When sidebar OPEN → move next to sidebar */
+  .btn-open {
+    left: 220px; /* match sidebar width */
+  }
+  
+  /* Sidebar animation */
+  .sidebar {
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar-hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* Optional: make highlighted buttons more visible */
+  .btn-primary,
+  .btn-warning,
+  .btn-success {
+    color: #fff !important;
+  }
+  

@@ -1,0 +1,88 @@
+<div class="container py-4">
+  <!-- Header -->
+  <div class="header mb-4">
+    <h2><span>9</span> Employees</h2>
+  </div>
+
+  <!-- Employee Cards -->
+  <div class="row g-4">
+    <!-- Loop through employees -->
+    <div
+      class="col-md-4"
+      *ngFor="let emp of employees"
+      (click)="openModal(emp)"
+      style="cursor:pointer"
+    >
+      <div class="card employee-card p-3">
+        <div class="d-flex align-items-center mb-3 position-relative">
+          <img [src]="emp.img" [alt]="emp.name" />
+          <span
+            class="status-dot"
+            [ngClass]="emp.online ? 'status-online' : 'status-offline'"
+          ></span>
+          <div class="ms-3 employee-info">
+            <h5>{{ emp.name }}</h5>
+            <p>{{ emp.position }}</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <p><strong>Department:</strong> {{ emp.department }}</p>
+          <p><strong>Hired Date:</strong> {{ emp.hired }}</p>
+          <p><i class="bi bi-envelope"></i> {{ emp.email }}</p>
+          <p><i class="bi bi-telephone"></i> {{ emp.phone }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Popup -->
+<div
+  class="modal fade"
+  id="employeeModal"
+  tabindex="-1"
+  aria-hidden="true"
+  #modalRef
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">{{ selectedEmployee?.name }}</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center">
+            <img
+              [src]="selectedEmployee?.img"
+              [alt]="selectedEmployee?.name"
+              class="rounded-circle mb-3"
+              style="width: 150px; height: 150px; object-fit: cover"
+            />
+          </div>
+          <div class="col-md-8">
+            <p><strong>Position:</strong> {{ selectedEmployee?.position }}</p>
+            <p><strong>Department:</strong> {{ selectedEmployee?.department }}</p>
+            <p><strong>Hired Date:</strong> {{ selectedEmployee?.hired }}</p>
+            <p><strong>Email:</strong> {{ selectedEmployee?.email }}</p>
+            <p><strong>Phone:</strong> {{ selectedEmployee?.phone }}</p>
+            <hr />
+            <p><strong>Age:</strong> {{ selectedEmployee?.age }}</p>
+            <p><strong>Education:</strong> {{ selectedEmployee?.education }}</p>
+            <p><strong>Experience:</strong> {{ selectedEmployee?.experience }}</p>
+            <p><strong>Hobbies:</strong> {{ selectedEmployee?.hobbies }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

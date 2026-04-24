@@ -1,0 +1,1607 @@
+{
+  "orders": [
+    {
+      "id": "5197",
+      "orderId": "ORD-1770298015947",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 10,
+      "change": 4.02,
+      "createdAt": "2026-02-05T13:26:55.947Z",
+      "status": "Cancelled"
+    },
+    {
+      "id": "5197",
+      "orderId": "ORD-1770298015947",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 10,
+      "change": 4.02,
+      "createdAt": "2026-02-05T13:26:55.947Z",
+      "status": "Cancelled"
+    },
+    {
+      "id": "ef20",
+      "orderId": "ORD-1770298072753",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 0,
+      "change": 0,
+      "createdAt": "2026-02-05T13:27:52.753Z",
+      "status": "Cancelled"
+    },
+    {
+      "id": "cf0a",
+      "orderId": "ORD-1770298423532",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Americano",
+          "price": 4.98,
+          "cost": 1.2,
+          "quantity": 1,
+          "image": "image/11.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 10,
+      "change": 5.02,
+      "createdAt": "2026-02-05T13:33:43.532Z",
+      "status": "Completed"
+    },
+    {
+      "id": "f333",
+      "orderId": "ORD-1770298459493",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Coffee Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 80,
+      "change": 74.02,
+      "createdAt": "2026-02-05T13:34:19.494Z",
+      "status": "Completed"
+    },
+    {
+      "id": "b25d",
+      "orderId": "ORD-1770298464237",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Coffee Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 10,
+      "change": 4.02,
+      "createdAt": "2026-02-05T13:34:24.237Z",
+      "status": "Completed"
+    },
+    {
+      "id": "4b4b",
+      "orderId": "ORD-1770351989157",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Americano",
+          "price": 4.98,
+          "cost": 1.2,
+          "quantity": 1,
+          "image": "image/11.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 10,
+      "change": 5.02,
+      "createdAt": "2026-02-06T04:26:29.157Z",
+      "status": "Completed"
+    },
+    {
+      "id": "b0b9",
+      "orderId": "ORD-1770352020381",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 4.75,
+      "discount": 0,
+      "total": 4.75,
+      "cash": 90,
+      "change": 85.25,
+      "createdAt": "2026-02-06T04:27:00.381Z",
+      "status": "Completed"
+    },
+    {
+      "id": "2bcf",
+      "orderId": "ORD-1770353960014",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Americano",
+          "price": 4.98,
+          "cost": 1.2,
+          "quantity": 1,
+          "image": "image/11.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 10,
+      "change": 5.02,
+      "createdAt": "2026-02-06T04:59:20.014Z",
+      "status": "Completed"
+    },
+    {
+      "id": "e265",
+      "orderId": "ORD-1770354957381",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 4.75,
+      "discount": 0,
+      "total": 4.75,
+      "cash": 90,
+      "change": 85.25,
+      "createdAt": "2026-02-06T05:15:57.381Z",
+      "status": "Completed"
+    },
+    {
+      "orderId": "ORD-1770355273048",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Caramel Macchiato",
+          "price": 5.98,
+          "cost": 2.3,
+          "quantity": 1,
+          "image": "image/4.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 90,
+      "change": 84.02,
+      "createdAt": "2026-02-06T05:21:13.048Z",
+      "status": "Completed",
+      "id": "7zyx0l"
+    },
+    {
+      "orderId": "ORD-1770355274024",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Caramel Macchiato",
+          "price": 5.98,
+          "cost": 2.3,
+          "quantity": 1,
+          "image": "image/4.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 90,
+      "change": 84.02,
+      "createdAt": "2026-02-06T05:21:14.024Z",
+      "status": "Completed",
+      "id": "ca466y"
+    },
+    {
+      "orderId": "ORD-1770355273855",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Caramel Macchiato",
+          "price": 5.98,
+          "cost": 2.3,
+          "quantity": 1,
+          "image": "image/4.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 90,
+      "change": 84.02,
+      "createdAt": "2026-02-06T05:21:13.855Z",
+      "status": "Completed",
+      "id": "08fpm8"
+    },
+    {
+      "orderId": "ORD-1770355366719",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 4.75,
+      "discount": 0,
+      "total": 4.75,
+      "cash": 90,
+      "change": 85.25,
+      "createdAt": "2026-02-06T05:22:46.719Z",
+      "status": "Completed",
+      "id": "q2y59w"
+    },
+    {
+      "orderId": "ORD-1770355727885",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 4.75,
+      "discount": 0,
+      "total": 4.75,
+      "cash": 10,
+      "change": 5.25,
+      "createdAt": "2026-02-06T05:28:47.885Z",
+      "status": "Completed",
+      "id": "74kyd0"
+    },
+    {
+      "orderId": "ORD-1770356236524",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Coffee Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 10,
+      "change": 4.02,
+      "createdAt": "2026-02-06T05:37:16.524Z",
+      "status": "Completed",
+      "id": "4olbkh"
+    },
+    {
+      "orderId": "ORD-1770356317623",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Caramel Macchiato",
+          "price": 5.98,
+          "cost": 2.3,
+          "quantity": 1,
+          "image": "image/4.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 10,
+      "change": 4.02,
+      "createdAt": "2026-02-06T05:38:37.623Z",
+      "status": "Completed",
+      "id": "ebfkpq"
+    },
+    {
+      "orderId": "ORD-1770356986896",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Caramel Macchiato",
+          "price": 5.98,
+          "cost": 2.3,
+          "quantity": 1,
+          "image": "image/4.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 7,
+      "change": 1.0199999999999996,
+      "createdAt": "2026-02-06T05:49:46.896Z",
+      "status": "Completed",
+      "id": "hl7l0y"
+    },
+    {
+      "orderId": "ORD-1770357836090",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Coffee Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 9,
+      "change": 3.0199999999999996,
+      "createdAt": "2026-02-06T06:03:56.090Z",
+      "status": "Completed",
+      "id": "f33cjl"
+    },
+    {
+      "orderId": "ORD-1770358390671",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Coffee Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        },
+        {
+          "name": "Iced Latte",
+          "price": 5.75,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/12.jpg"
+        },
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 16.48,
+      "discount": 0,
+      "total": 16.48,
+      "cash": 19,
+      "change": 2.5199999999999996,
+      "createdAt": "2026-02-06T06:13:10.671Z",
+      "status": "Completed",
+      "id": "sskn5q"
+    },
+    {
+      "orderId": "ORD-1770358503668",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Chocolate Milk",
+          "price": 4.25,
+          "cost": 1.6,
+          "quantity": 1,
+          "image": "image/15.jpg"
+        }
+      ],
+      "subtotal": 4.25,
+      "discount": 0,
+      "total": 4.25,
+      "cash": 10,
+      "change": 5.75,
+      "createdAt": "2026-02-06T06:15:03.668Z",
+      "status": "Completed",
+      "id": "rqmuly"
+    },
+    {
+      "orderId": "ORD-1770358633518",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        },
+        {
+          "name": "Black Coffee",
+          "price": 3.75,
+          "cost": 0.9,
+          "quantity": 1,
+          "image": "image/19.jpg"
+        },
+        {
+          "name": "Green Tea",
+          "price": 3.5,
+          "cost": 0.8,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 12,
+      "discount": 0,
+      "total": 12,
+      "cash": 100,
+      "change": 88,
+      "createdAt": "2026-02-06T06:17:13.518Z",
+      "status": "Completed",
+      "id": "7xuroi"
+    },
+    {
+      "orderId": "ORD-1770359700837",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 4.75,
+      "discount": 0,
+      "total": 4.75,
+      "cash": 10,
+      "change": 5.25,
+      "createdAt": "2026-02-06T06:35:00.837Z",
+      "status": "Completed",
+      "id": "bxhdip"
+    },
+    {
+      "orderId": "ORD-1770359701892",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 4.75,
+      "discount": 0,
+      "total": 4.75,
+      "cash": 10,
+      "change": 5.25,
+      "createdAt": "2026-02-06T06:35:01.892Z",
+      "status": "Completed",
+      "id": "p9m5du"
+    },
+    {
+      "orderId": "ORD-1770359702077",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 4.75,
+      "discount": 0,
+      "total": 4.75,
+      "cash": 10,
+      "change": 5.25,
+      "createdAt": "2026-02-06T06:35:02.077Z",
+      "status": "Completed",
+      "id": "9jkoxw"
+    },
+    {
+      "orderId": "ORD-1770359723304",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Cappuccino",
+          "price": 4.98,
+          "cost": 1.8,
+          "quantity": 1,
+          "image": "image/17.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 10,
+      "change": 5.02,
+      "createdAt": "2026-02-06T06:35:23.304Z",
+      "status": "Completed",
+      "id": "omcuor"
+    },
+    {
+      "id": "ccf3",
+      "orderId": "ORD-1770382962659",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Americano",
+          "price": 4.98,
+          "cost": 1.2,
+          "quantity": 1,
+          "image": "image/11.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 10,
+      "change": 5.02,
+      "createdAt": "2026-02-06T13:02:42.659Z",
+      "status": "Completed"
+    },
+    {
+      "id": "39b1",
+      "orderId": "ORD-1770383598315",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Caramel Macchiato",
+          "price": 5.98,
+          "cost": 2.3,
+          "quantity": 1,
+          "image": "image/4.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 10,
+      "change": 4.02,
+      "createdAt": "2026-02-06T13:13:18.315Z",
+      "status": "Completed"
+    },
+    {
+      "orderId": "ORD-1770383795812",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Americano",
+          "price": 4.98,
+          "cost": 1.2,
+          "quantity": 1,
+          "image": "image/11.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 10,
+      "change": 5.02,
+      "createdAt": "2026-02-06T13:16:35.812Z",
+      "status": "Completed",
+      "id": "1770383796868"
+    },
+    {
+      "orderId": "ORD-1770384423195",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Green Tea",
+          "price": 3.5,
+          "cost": 0.8,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 3.5,
+      "discount": 0,
+      "total": 3.5,
+      "cash": 10,
+      "change": 6.5,
+      "createdAt": "2026-02-06T13:27:03.195Z",
+      "status": "Completed",
+      "id": "1770384424279"
+    },
+    {
+      "orderId": "ORD-1770384494321",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Coffee Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 10,
+      "change": 4.02,
+      "createdAt": "2026-02-06T13:28:14.321Z",
+      "status": "Completed",
+      "id": "1770384495374"
+    },
+    {
+      "orderId": "ORD-1770384515345",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Americano",
+          "price": 4.98,
+          "cost": 1.2,
+          "quantity": 1,
+          "image": "image/11.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 10,
+      "change": 5.02,
+      "createdAt": "2026-02-06T13:28:35.345Z",
+      "status": "Completed",
+      "id": "1770384515351"
+    },
+    {
+      "orderId": "ORD-1770384645994",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Espresso",
+          "price": 3.98,
+          "cost": 0.9,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 3.98,
+      "discount": 0,
+      "total": 3.98,
+      "cash": 10,
+      "change": 6.02,
+      "createdAt": "2026-02-06T13:30:45.994Z",
+      "status": "Completed",
+      "id": "1770384645999"
+    },
+    {
+      "id": "5197",
+      "orderId": "ORD-1770298015947",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 10,
+      "change": 4.02,
+      "createdAt": "2026-02-05T13:26:55.947Z",
+      "status": "Cancelled"
+    },
+    {
+      "id": "ef20",
+      "orderId": "ORD-1770298072753",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 0,
+      "change": 0,
+      "createdAt": "2026-02-05T13:27:52.753Z",
+      "status": "Cancelled"
+    },
+    {
+      "id": "cf0a",
+      "orderId": "ORD-1770298423532",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Americano",
+          "price": 4.98,
+          "cost": 1.2,
+          "quantity": 1,
+          "image": "image/11.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 10,
+      "change": 5.02,
+      "createdAt": "2026-02-05T13:33:43.532Z",
+      "status": "Completed"
+    },
+    {
+      "id": "f333",
+      "orderId": "ORD-1770298459493",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Coffee Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 80,
+      "change": 74.02,
+      "createdAt": "2026-02-05T13:34:19.494Z",
+      "status": "Completed"
+    },
+    {
+      "id": "b25d",
+      "orderId": "ORD-1770298464237",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Coffee Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 10,
+      "change": 4.02,
+      "createdAt": "2026-02-05T13:34:24.237Z",
+      "status": "Completed"
+    },
+    {
+      "id": "4b4b",
+      "orderId": "ORD-1770351989157",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Americano",
+          "price": 4.98,
+          "cost": 1.2,
+          "quantity": 1,
+          "image": "image/11.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 10,
+      "change": 5.02,
+      "createdAt": "2026-02-06T04:26:29.157Z",
+      "status": "Completed"
+    },
+    {
+      "id": "b0b9",
+      "orderId": "ORD-1770352020381",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 4.75,
+      "discount": 0,
+      "total": 4.75,
+      "cash": 90,
+      "change": 85.25,
+      "createdAt": "2026-02-06T04:27:00.381Z",
+      "status": "Completed"
+    },
+    {
+      "id": "2bcf",
+      "orderId": "ORD-1770353960014",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Americano",
+          "price": 4.98,
+          "cost": 1.2,
+          "quantity": 1,
+          "image": "image/11.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 10,
+      "change": 5.02,
+      "createdAt": "2026-02-06T04:59:20.014Z",
+      "status": "Completed"
+    },
+    {
+      "id": "e265",
+      "orderId": "ORD-1770354957381",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 4.75,
+      "discount": 0,
+      "total": 4.75,
+      "cash": 90,
+      "change": 85.25,
+      "createdAt": "2026-02-06T05:15:57.381Z",
+      "status": "Completed"
+    },
+    {
+      "orderId": "ORD-1770355273048",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Caramel Macchiato",
+          "price": 5.98,
+          "cost": 2.3,
+          "quantity": 1,
+          "image": "image/4.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 90,
+      "change": 84.02,
+      "createdAt": "2026-02-06T05:21:13.048Z",
+      "status": "Completed",
+      "id": "7zyx0l"
+    },
+    {
+      "orderId": "ORD-1770355274024",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Caramel Macchiato",
+          "price": 5.98,
+          "cost": 2.3,
+          "quantity": 1,
+          "image": "image/4.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 90,
+      "change": 84.02,
+      "createdAt": "2026-02-06T05:21:14.024Z",
+      "status": "Completed",
+      "id": "ca466y"
+    },
+    {
+      "orderId": "ORD-1770355273855",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Caramel Macchiato",
+          "price": 5.98,
+          "cost": 2.3,
+          "quantity": 1,
+          "image": "image/4.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 90,
+      "change": 84.02,
+      "createdAt": "2026-02-06T05:21:13.855Z",
+      "status": "Completed",
+      "id": "08fpm8"
+    },
+    {
+      "orderId": "ORD-1770355366719",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 4.75,
+      "discount": 0,
+      "total": 4.75,
+      "cash": 90,
+      "change": 85.25,
+      "createdAt": "2026-02-06T05:22:46.719Z",
+      "status": "Completed",
+      "id": "q2y59w"
+    },
+    {
+      "orderId": "ORD-1770355727885",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 4.75,
+      "discount": 0,
+      "total": 4.75,
+      "cash": 10,
+      "change": 5.25,
+      "createdAt": "2026-02-06T05:28:47.885Z",
+      "status": "Completed",
+      "id": "74kyd0"
+    },
+    {
+      "orderId": "ORD-1770356236524",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Coffee Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 10,
+      "change": 4.02,
+      "createdAt": "2026-02-06T05:37:16.524Z",
+      "status": "Completed",
+      "id": "4olbkh"
+    },
+    {
+      "orderId": "ORD-1770356317623",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Caramel Macchiato",
+          "price": 5.98,
+          "cost": 2.3,
+          "quantity": 1,
+          "image": "image/4.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 10,
+      "change": 4.02,
+      "createdAt": "2026-02-06T05:38:37.623Z",
+      "status": "Completed",
+      "id": "ebfkpq"
+    },
+    {
+      "orderId": "ORD-1770356986896",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Caramel Macchiato",
+          "price": 5.98,
+          "cost": 2.3,
+          "quantity": 1,
+          "image": "image/4.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 7,
+      "change": 1.0199999999999996,
+      "createdAt": "2026-02-06T05:49:46.896Z",
+      "status": "Completed",
+      "id": "hl7l0y"
+    },
+    {
+      "orderId": "ORD-1770357836090",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Coffee Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 9,
+      "change": 3.0199999999999996,
+      "createdAt": "2026-02-06T06:03:56.090Z",
+      "status": "Completed",
+      "id": "f33cjl"
+    },
+    {
+      "orderId": "ORD-1770358390671",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Coffee Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        },
+        {
+          "name": "Iced Latte",
+          "price": 5.75,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/12.jpg"
+        },
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 16.48,
+      "discount": 0,
+      "total": 16.48,
+      "cash": 19,
+      "change": 2.5199999999999996,
+      "createdAt": "2026-02-06T06:13:10.671Z",
+      "status": "Completed",
+      "id": "sskn5q"
+    },
+    {
+      "orderId": "ORD-1770358503668",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Chocolate Milk",
+          "price": 4.25,
+          "cost": 1.6,
+          "quantity": 1,
+          "image": "image/15.jpg"
+        }
+      ],
+      "subtotal": 4.25,
+      "discount": 0,
+      "total": 4.25,
+      "cash": 10,
+      "change": 5.75,
+      "createdAt": "2026-02-06T06:15:03.668Z",
+      "status": "Completed",
+      "id": "rqmuly"
+    },
+    {
+      "orderId": "ORD-1770358633518",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        },
+        {
+          "name": "Black Coffee",
+          "price": 3.75,
+          "cost": 0.9,
+          "quantity": 1,
+          "image": "image/19.jpg"
+        },
+        {
+          "name": "Green Tea",
+          "price": 3.5,
+          "cost": 0.8,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 12,
+      "discount": 0,
+      "total": 12,
+      "cash": 100,
+      "change": 88,
+      "createdAt": "2026-02-06T06:17:13.518Z",
+      "status": "Completed",
+      "id": "7xuroi"
+    },
+    {
+      "orderId": "ORD-1770359700837",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 4.75,
+      "discount": 0,
+      "total": 4.75,
+      "cash": 10,
+      "change": 5.25,
+      "createdAt": "2026-02-06T06:35:00.837Z",
+      "status": "Completed",
+      "id": "bxhdip"
+    },
+    {
+      "orderId": "ORD-1770359701892",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 4.75,
+      "discount": 0,
+      "total": 4.75,
+      "cash": 10,
+      "change": 5.25,
+      "createdAt": "2026-02-06T06:35:01.892Z",
+      "status": "Completed",
+      "id": "p9m5du"
+    },
+    {
+      "orderId": "ORD-1770359702077",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Milk Tea",
+          "price": 4.75,
+          "cost": 1.7,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 4.75,
+      "discount": 0,
+      "total": 4.75,
+      "cash": 10,
+      "change": 5.25,
+      "createdAt": "2026-02-06T06:35:02.077Z",
+      "status": "Completed",
+      "id": "9jkoxw"
+    },
+    {
+      "orderId": "ORD-1770359723304",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Cappuccino",
+          "price": 4.98,
+          "cost": 1.8,
+          "quantity": 1,
+          "image": "image/17.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 10,
+      "change": 5.02,
+      "createdAt": "2026-02-06T06:35:23.304Z",
+      "status": "Completed",
+      "id": "omcuor"
+    },
+    {
+      "id": "ccf3",
+      "orderId": "ORD-1770382962659",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Americano",
+          "price": 4.98,
+          "cost": 1.2,
+          "quantity": 1,
+          "image": "image/11.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 10,
+      "change": 5.02,
+      "createdAt": "2026-02-06T13:02:42.659Z",
+      "status": "Completed"
+    },
+    {
+      "id": "39b1",
+      "orderId": "ORD-1770383598315",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Caramel Macchiato",
+          "price": 5.98,
+          "cost": 2.3,
+          "quantity": 1,
+          "image": "image/4.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 10,
+      "change": 4.02,
+      "createdAt": "2026-02-06T13:13:18.315Z",
+      "status": "Completed"
+    },
+    {
+      "orderId": "ORD-1770383795812",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Americano",
+          "price": 4.98,
+          "cost": 1.2,
+          "quantity": 1,
+          "image": "image/11.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 10,
+      "change": 5.02,
+      "createdAt": "2026-02-06T13:16:35.812Z",
+      "status": "Completed",
+      "id": "1770383796868"
+    },
+    {
+      "orderId": "ORD-1770384423195",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Green Tea",
+          "price": 3.5,
+          "cost": 0.8,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 3.5,
+      "discount": 0,
+      "total": 3.5,
+      "cash": 10,
+      "change": 6.5,
+      "createdAt": "2026-02-06T13:27:03.195Z",
+      "status": "Completed",
+      "id": "1770384424279"
+    },
+    {
+      "orderId": "ORD-1770384494321",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Coffee Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        }
+      ],
+      "subtotal": 5.98,
+      "discount": 0,
+      "total": 5.98,
+      "cash": 10,
+      "change": 4.02,
+      "createdAt": "2026-02-06T13:28:14.321Z",
+      "status": "Completed",
+      "id": "1770384495374"
+    },
+    {
+      "orderId": "ORD-1770384515345",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Americano",
+          "price": 4.98,
+          "cost": 1.2,
+          "quantity": 1,
+          "image": "image/11.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 10,
+      "change": 5.02,
+      "createdAt": "2026-02-06T13:28:35.345Z",
+      "status": "Completed",
+      "id": "1770384515351"
+    },
+    {
+      "orderId": "ORD-1770384645994",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Espresso",
+          "price": 3.98,
+          "cost": 0.9,
+          "quantity": 1,
+          "image": "image/7.jpg"
+        }
+      ],
+      "subtotal": 3.98,
+      "discount": 0,
+      "total": 3.98,
+      "cash": 10,
+      "change": 6.02,
+      "createdAt": "2026-02-06T13:30:45.994Z",
+      "status": "Completed",
+      "id": "1770384645999"
+    },
+    {
+      "orderId": "ORD-1771476239424",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Coffee Latte",
+          "price": 5.98,
+          "cost": 2.1,
+          "quantity": 1,
+          "image": "image/13.jpg"
+        },
+        {
+          "name": "Mocha",
+          "price": 5.98,
+          "cost": 2.4,
+          "quantity": 1,
+          "image": "image/6.jpg"
+        },
+        {
+          "name": "Hazelnut Latte",
+          "price": 6.25,
+          "cost": 2.5,
+          "quantity": 1,
+          "image": "image/8.jpg"
+        }
+      ],
+      "subtotal": 18.21,
+      "discount": 0,
+      "total": 18.21,
+      "cash": 20,
+      "change": 1.7899999999999991,
+      "createdAt": "2026-02-19T04:43:59.424Z",
+      "status": "Completed",
+      "id": "1771476240990"
+    },
+    {
+      "orderId": "ORD-1771476253602",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Cappuccino",
+          "price": 4.98,
+          "cost": 1.8,
+          "quantity": 1,
+          "image": "image/17.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 0,
+      "change": 0,
+      "createdAt": "2026-02-19T04:44:13.602Z",
+      "status": "PreOrder",
+      "id": "1771476253608"
+    },
+    {
+      "orderId": "ORD-1771497030041",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Nachos",
+          "price": 5.5,
+          "cost": 2.2,
+          "quantity": 1,
+          "image": "image/appetizer/Nachos.jpg"
+        }
+      ],
+      "subtotal": 5.5,
+      "discount": 0,
+      "total": 5.5,
+      "cash": 10,
+      "change": 4.5,
+      "createdAt": "2026-02-19T10:30:30.041Z",
+      "status": "Completed",
+      "id": "1771497030047"
+    },
+    {
+      "orderId": "ORD-1771497229253",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Chocolate Milk",
+          "price": 4.25,
+          "cost": 1.6,
+          "quantity": 1,
+          "image": "image/15.jpg"
+        },
+        {
+          "name": "Crepe",
+          "price": 4.25,
+          "cost": 1.8,
+          "quantity": 1,
+          "image": "image/desert/Crepe.jpg"
+        },
+        {
+          "name": "Corn Dogs",
+          "price": 3.9,
+          "cost": 1.5,
+          "quantity": 1,
+          "image": "image/appetizer/CornDogs.jpg"
+        },
+        {
+          "name": "Calamari",
+          "price": 6.8,
+          "cost": 3.2,
+          "quantity": 1,
+          "image": "image/appetizer/Calamari.jpg"
+        },
+        {
+          "name": "Onion Rings",
+          "price": 3.75,
+          "cost": 1.4,
+          "quantity": 1,
+          "image": "image/appetizer/OnionRings.jpg"
+        },
+        {
+          "name": "Crosant Sandwich",
+          "price": 4.5,
+          "cost": 1.8,
+          "quantity": 1,
+          "image": "image/appetizer/MiniSandwich.jpg"
+        }
+      ],
+      "subtotal": 27.45,
+      "discount": 2.25,
+      "total": 25.2,
+      "cash": 30,
+      "change": 4.800000000000001,
+      "createdAt": "2026-02-19T10:33:49.253Z",
+      "status": "Completed",
+      "id": "1771497230122"
+    },
+    {
+      "orderId": "ORD-1771593113266",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Garlic Bread",
+          "price": 3.5,
+          "cost": 1.2,
+          "quantity": 3,
+          "image": "image/appetizer/GarlicBread.jpg"
+        },
+        {
+          "name": "Chicken Wings",
+          "price": 6.5,
+          "cost": 3,
+          "quantity": 1,
+          "image": "image/appetizer/ChickenWings.jpg"
+        }
+      ],
+      "subtotal": 17,
+      "discount": 0,
+      "total": 17,
+      "cash": 20,
+      "change": 3,
+      "createdAt": "2026-02-20T13:11:53.267Z",
+      "status": "Completed",
+      "id": "1771593113295"
+    },
+    {
+      "orderId": "ORD-1771593277201",
+      "tableNumber": null,
+      "items": [
+        {
+          "name": "Cappuccino",
+          "price": 4.98,
+          "cost": 1.8,
+          "quantity": 1,
+          "image": "image/17.jpg"
+        }
+      ],
+      "subtotal": 4.98,
+      "discount": 0,
+      "total": 4.98,
+      "cash": 90,
+      "change": 85.02,
+      "createdAt": "2026-02-20T13:14:37.201Z",
+      "status": "Completed",
+      "id": "1771593278307"
+    }
+  ]
+}
