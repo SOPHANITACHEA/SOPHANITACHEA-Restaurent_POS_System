@@ -21,7 +21,9 @@ export const routes: Routes = [
     {path:'employee', component:Employee},
     {path:'Categories', component:Categories},
     { path: 'history', component: OrderHistory },
-    { path: 'summary', component: Summary}
+    { path: 'summary', component: Summary},
+    { path: '**', redirectTo: '', pathMatch: 'full' }
+
 
     
 ];
